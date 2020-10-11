@@ -2,7 +2,7 @@ name: Test and Export
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 env:
   BIT_TOKEN: ${{ secrets.BIT_TOKEN }}
 jobs:
