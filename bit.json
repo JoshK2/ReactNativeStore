@@ -1,9 +1,16 @@
 {
-    "env": {
-        "compiler": "bit.envs/compilers/react-native@1.0.22",
-        "tester": "bit.envs/testers/mocha@5.0.2"
-    },
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm",
-    "defaultScope": "bit.react-native-store"
+  "env": {
+    "compiler": "bit.envs/compilers/react-native@1.0.22",
+    "tester": "bit.envs/testers/mocha@5.0.2"
+  },
+  "componentsDefaultDirectory": "components/{name}",
+  "packageManager": "npm",
+  "defaultScope": "bit.react-native-store",
+  "overrides": {
+    "utils/*": {
+      "devDependencies": {
+        "@babel/runtime": "^7.11.2"
+      }
+    }
+  }
 }
