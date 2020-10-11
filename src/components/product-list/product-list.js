@@ -30,7 +30,7 @@ ProductsList.propTypes = {
     PropTypes.shape({
       title: PropTypes.string,
       description: PropTypes.string,
-      price: PropTypes.string,
+      price: PropTypes.number,
       image: PropTypes.string,
       stock: PropTypes.number,
     }),
