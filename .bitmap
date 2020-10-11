@@ -19,7 +19,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.react-native-store/button@0.0.1": {
+    "bit.react-native-store/button@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/button/button.js",
@@ -37,7 +37,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.react-native-store/product-list@0.0.1": {
+    "bit.react-native-store/product-list@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/product-list/index.js",
@@ -55,7 +55,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.react-native-store/product@0.0.1": {
+    "bit.react-native-store/product@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/product/index.js",
