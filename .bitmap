@@ -84,6 +84,11 @@
                 "relativePath": "src/utils/sort-price/sort-price.js",
                 "test": false,
                 "name": "sort-price.js"
+            },
+            {
+                "relativePath": "src/utils/sort-price/test.js",
+                "test": true,
+                "name": "test.js"
             }
         ],
         "mainFile": "src/utils/sort-price/index.js",
