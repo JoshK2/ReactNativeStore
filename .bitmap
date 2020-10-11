@@ -37,7 +37,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.react-native-store/product-list@0.0.2": {
+    "bit.react-native-store/product-list@0.0.3": {
         "files": [
             {
                 "relativePath": "src/components/product-list/index.js",
