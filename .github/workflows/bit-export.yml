@@ -1,0 +1,62 @@
+name: Test and Export
+
+on:
+  push:
+    branches: [master]
+env:
+  BIT_TOKEN: ${{ secrets.BIT_TOKEN }}
+jobs:
+  # test:
+  #   runs-on: ubuntu-latest
+  #   if: "!contains(github.event.head_commit.message, 'skip-ci')"
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Install Dependencies
+  #       run: npm config set @bit:registry https://node.bit.dev && npm config list && npm install
+  #     - name: Install bit-bin
+  #       run: sudo npm install bit-bin@14.8.8 -g --unsafe-perm
+  #     - name: bit config
+  #       run: |
+  #         bit config set analytics_reporting false
+  #         bit config set anonymous_reporting false
+  #         bit config set user.token ${{ env.BIT_TOKEN }}
+  #         bit config
+  #     - name: run tests
+  #       run: npm run test
+  bit-export:
+    runs-on: ubuntu-latest
+    needs: test
+    if: "!contains(github.event.head_commit.message, 'skip-ci')"
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm config set @bit:registry https://node.bit.dev && npm config list && npm install
+      - name: Install bit-bin
+        run: sudo npm install bit-bin@14.8.8 -g --unsafe-perm
+      - name: bit config
+        run: |
+          bit config set analytics_reporting false
+          bit config set anonymous_reporting false
+          bit config set user.token ${{ env.BIT_TOKEN }}
+          bit config
+      - name: bit import
+        run: |
+          bit -v && bit import
+      - name: bit import compiler
+        # workaround https://github.com/teambit/bit/issues/2689
+        run: |
+          cp bit.json bit.json.backup
+          bit import bit.envs/compilers/react-native@1.0.22 -c
+          cp bit.json.backup bit.json
+          rm -rf bit.json.backup
+      - name: bit export
+        run: |
+          bit status
+          bit tag -a
+          bit export
+      - name: Commit changes
+        run: |
+          git config --global user.name '${{ github.actor }}'
+          git config --global user.email '${{ github.actor }}@users.noreply.github.com'
+          git commit -am "Automated commit"
+          git push
