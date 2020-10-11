@@ -1,8 +1,8 @@
 {
-  "env": {
-    "compiler": "bit.envs/compilers/react-native@1.0.22"
-  },
-  "componentsDefaultDirectory": "components/{name}",
-  "packageManager": "npm",
-  "defaultScope": "bit.react-native-store"
+    "env": {
+        "compiler": "bit.envs/compilers/react-native@1.0.22"
+    },
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm",
+    "defaultScope": "bit.react-native-store"
 }
