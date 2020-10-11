@@ -33,12 +33,5 @@
   },
   "jest": {
     "preset": "react-native"
-  },
-  "bit": {
-    "env": {
-      "compiler": "bit.envs/compilers/react-native@1.0.22"
-    },
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
   }
 }
