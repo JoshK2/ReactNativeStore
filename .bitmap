@@ -73,7 +73,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.react-native-store/utils/sort-price@0.0.3": {
+    "bit.react-native-store/utils/sort-price@0.0.4": {
         "files": [
             {
                 "relativePath": "src/utils/sort-price/index.js",
