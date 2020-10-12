@@ -37,4 +37,8 @@ describe('high result first', function () {
     const highFirst = sortPrice(productsList, 'high');
     assert(highFirst[0].price === 225);
   });
+  it('return the products list with lower price first', () => {
+    const lowFirst = sortPrice(productsList, 'low');
+    assert(lowFirst[0].price === 90);
+  });
 });

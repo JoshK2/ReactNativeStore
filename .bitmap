@@ -86,7 +86,7 @@
                 "name": "sort-price.js"
             },
             {
-                "relativePath": "src/utils/sort-price/test.js",
+                "relativePath": "src/utils/sort-price/test.spec.js",
                 "test": true,
                 "name": "test.js"
             }
