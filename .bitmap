@@ -37,6 +37,24 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.react-native-store/label@0.0.2": {
+        "files": [
+            {
+                "relativePath": "src/components/label/index.js",
+                "test": false,
+                "name": "index.js"
+            },
+            {
+                "relativePath": "src/components/label/label.js",
+                "test": false,
+                "name": "label.js"
+            }
+        ],
+        "mainFile": "src/components/label/index.js",
+        "trackDir": "src/components/label",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.react-native-store/product-list@0.0.6": {
         "files": [
             {
