@@ -37,7 +37,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.react-native-store/label@0.0.4": {
+    "bit.react-native-store/label@0.0.5": {
         "files": [
             {
                 "name": "index.js",
