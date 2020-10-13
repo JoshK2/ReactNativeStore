@@ -1,10 +1,10 @@
 import React from 'react';
-import {StyleSheet, TouchableHighlight, Text} from 'react-native';
+import {StyleSheet, Text} from 'react-native';
 import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   text: {
-    color: '#ffffff',
+    color: '#000000',
     textAlign: 'center',
     fontSize: 18,
     fontWeight: '500',
