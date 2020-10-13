@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 });
 
 const Label = ({title}) => {
-  return <Text style={styles.text}>{title}!</Text>;
+  return <Text style={styles.text}>{title}</Text>;
 };
 
 Label.propTypes = {
